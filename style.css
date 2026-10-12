@@ -1361,38 +1361,83 @@ form button:hover {
 @media (max-width: 700px) {
 
     .team-section {
-        padding:
-            80px 6%;
+        padding: 80px 4% 90px;
     }
 
     .team-heading {
         margin-bottom: 45px;
     }
 
-    .team-heading h2 {
-        font-size: 42px;
+
+    /* SUPERVISOR */
+
+    .supervisor .org-image {
+        width: 105px;
+        height: 105px;
     }
 
-    .tree-horizontal-line {
-        display: none;
+
+    /* TEAM LEADER */
+
+    .leader .org-image {
+        width: 100px;
+        height: 100px;
     }
+
+
+    /* CONNECTOR TO TEAM MEMBERS */
 
     .tree-connector {
-        height: 35px;
+        width: 100%;
+        height: 45px;
     }
 
     .tree-middle-line {
-        height: 35px;
+        display: block;
+        height: 25px;
+        top: 0;
     }
 
-    .org-members {
-        grid-template-columns: 1fr;
+    .tree-horizontal-line {
+        display: block;
+        top: 25px;
+        left: 16.66%;
+        right: 16.66%;
+    }
 
-        gap: 35px;
+
+    /* THREE TEAM MEMBERS */
+
+    .org-members {
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5px;
     }
 
     .member-line {
-        height: 25px;
+        height: 20px;
+    }
+
+    .org-box {
+        width: 100%;
+        padding: 0 4px;
+    }
+
+    .org-member .org-image {
+        width: 82px;
+        height: 82px;
+        margin-bottom: 10px;
+        border-width: 2px;
+    }
+
+    .org-box span {
+        font-size: 6px;
+        letter-spacing: 0.8px;
+    }
+
+    .org-box h3 {
+        font-size: 9px;
+        line-height: 1.35;
     }
 
 
@@ -1400,15 +1445,12 @@ form button:hover {
 
     .site-footer {
         flex-direction: column;
-
         gap: 25px;
-
         padding: 35px 6%;
     }
 
     .footer-phones {
         width: 100%;
-
         min-width: 0;
     }
 }
