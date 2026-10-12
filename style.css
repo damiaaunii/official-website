@@ -1577,3 +1577,12 @@ form button:hover {
         grid-column: 1;
     }
 }
+
+/* CONSISTENT SECTION HEADING SIZE */
+
+.how-heading h2,
+.technology-heading h2,
+.team-heading h2,
+.contact-content h2 {
+    font-size: clamp(36px, 4vw, 56px);
+}
